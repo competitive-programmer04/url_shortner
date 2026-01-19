@@ -40,9 +40,10 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/url_shortner.git
+git clone https://github.com/competitive-programmer04/url_shortner.git
 cd url_shortner
-2. Backend Setup
+
+### 2. Backend Setup
 Navigate to the server folder and install dependencies:
 code
 Bash
@@ -61,8 +62,9 @@ Bash
 npm start
 # or for development
 npm run dev
-The server will start on http://localhost:3000.
-3. Frontend Setup
+The server will start on http://localhost:3000
+
+### 3. Frontend Setup
 Open a new terminal, navigate to the client folder, and install dependencies:
 code
 Bash
@@ -77,6 +79,7 @@ The application will open on http://localhost:3000.
 Method	Endpoint	Description	Body / Params
 POST	/shorten	Create a new short URL	Body: { "originalUrl": "https://..." }
 GET	/:id	Redirect to original URL	Param: id (e.g., Ab3d)
+
 🗄️ Database Schema (Supabase)
 Table: urls
 Column Name	Type	Description
@@ -85,6 +88,8 @@ created_at	timestamptz	Auto-generated timestamp
 original_url	text	The long URL input by user
 short_id	text	Unique short code (Indexed)
 visit_cnt	int8	Counter for redirects
+
+
 🤝 Contributing
 Contributions are welcome!
 Fork the project.
