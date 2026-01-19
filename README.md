@@ -39,7 +39,7 @@ Follow these steps to set up the project locally.
 *   A [Supabase](https://supabase.com/) account
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/competitive-programmer04/url_shortner.git
 cd url_shortner
 
@@ -60,7 +60,7 @@ Run the Server:
 code
 Bash
 npm start
-# or for development
+or for development
 npm run dev
 The server will start on http://localhost:3000
 
@@ -80,7 +80,8 @@ Method	Endpoint	Description	Body / Params
 POST	/shorten	Create a new short URL	Body: { "originalUrl": "https://..." }
 GET	/:id	Redirect to original URL	Param: id (e.g., Ab3d)
 
-🗄️ Database Schema (Supabase)
+
+### 🗄️ Database Schema (Supabase)
 Table: urls
 Column Name	Type	Description
 id	int8	Primary Key
@@ -90,13 +91,16 @@ short_id	text	Unique short code (Indexed)
 visit_cnt	int8	Counter for redirects
 
 
-🤝 Contributing
+
+### 🤝 Contributing
 Contributions are welcome!
 Fork the project.
 Create your feature branch (git checkout -b feature/AmazingFeature).
 Commit your changes (git commit -m 'Add some AmazingFeature').
 Push to the branch (git push origin feature/AmazingFeature).
 Open a Pull Request.
+
+
 📝 License
 Distributed under the MIT License. See LICENSE for more information.
 
